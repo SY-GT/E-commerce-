@@ -1,6 +1,9 @@
 /* General Styles */
 body {
-    margin: 0;
+    margin-right:2px;
+    margin-up:0px;
+    margin-bottom:0px;
+    margin-left:0px:;
     font-family: 'Playfair Display', serif;
     color: #333;
     line-height: 1.6;
