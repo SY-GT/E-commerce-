@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    margin: 1px;
+    margin: 0;
     font-family: 'Playfair Display', serif;
     color: #333;
     line-height: 1.6;
@@ -28,7 +28,7 @@ header .logo {
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 
 header nav ul li a {
@@ -36,7 +36,7 @@ header nav ul li a {
     color: #fff;
     font-size: 16px;
     transition: color 0.3s ease;
-    margin:1px;
+    
     
 }
 
