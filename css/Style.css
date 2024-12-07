@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    margin: 0;
+    margin: 1px;
     font-family: 'Playfair Display', serif;
     color: #333;
     line-height: 1.6;
@@ -36,6 +36,7 @@ header nav ul li a {
     color: #fff;
     font-size: 16px;
     transition: color 0.3s ease;
+    margin:1px;
     
 }
 
