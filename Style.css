@@ -1,28 +1,32 @@
 /* General Styles */
 body {
-    margin: 0;
+    margin:auto;
     font-family: 'Playfair Display', serif;
     color: #333;
     line-height: 1.6;
     background-color: grey;
 }
 
-/* Fixed Header Style */
+/* Header */
 header {
+    padding-right:1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: grey; /* Light grey background */
-    color: #333; /* Dark text color */
+    background-color: #111;
+    color: #fff;
     padding: 15px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    margin-right:4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-/* Adjusting Navigation Links for New Background */
+header .logo {
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -31,19 +35,14 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    color: #333; /* Matches new text color */
+    color: #fff;
     font-size: 16px;
     transition: color 0.3s ease;
+    margin-right: 0px;
 }
 
 header nav ul li a:hover {
-    color: #f39c12; /* Hover effect */
-}
-
-header .logo {
-    font-size: 45px;
-    font-weight: bold;
-    letter-spacing: 2px;
+    color: #f39c12;
 }
 
 /* Hero Section */
@@ -53,7 +52,7 @@ header .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: grey;
+    color: #fff;
     text-align: center;
 }
 
@@ -121,7 +120,6 @@ header .logo {
     margin: 10px 0;
     padding: 0 10px;
 }
-
 /* About Section */
 .about {
     background-color: #fff;
@@ -155,7 +153,7 @@ header .logo {
     background-color: #111;
     color: #fff;
     padding: 10px;
-    border: none;
+    border:none;
     cursor: pointer;
 }
 
@@ -165,4 +163,4 @@ footer {
     color: darkgrey;
     padding: 10px 20px;
     text-align: center;
-}
+    }
