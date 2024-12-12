@@ -7,25 +7,21 @@ body {
     background-color: grey;
 }
 
-/* Header */
+/* Fixed Header Style */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #111;
-    color: #fff;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333; /* Dark text color */
     padding: 15px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-header .logo {
-    font-size: 45px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
+/* Adjusting Navigation Links for New Background */
 header nav ul {
     list-style: none;
     display: flex;
@@ -34,14 +30,19 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #333; /* Matches new text color */
     font-size: 16px;
     transition: color 0.3s ease;
-    margin-right: 0px;
 }
 
 header nav ul li a:hover {
-    color: #f39c12;
+    color: #f39c12; /* Hover effect */
+}
+
+header .logo {
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 /* Hero Section */
@@ -119,6 +120,7 @@ header nav ul li a:hover {
     margin: 10px 0;
     padding: 0 10px;
 }
+
 /* About Section */
 .about {
     background-color: #fff;
@@ -152,7 +154,7 @@ header nav ul li a:hover {
     background-color: #111;
     color: #fff;
     padding: 10px;
-    border:none;
+    border: none;
     cursor: pointer;
 }
 
