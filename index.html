@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Header Section -->
     <header>
@@ -17,9 +19,11 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#categories">Categories</a></li>
                 <li><a href="#about">About</a></li>
-                
             </ul>
         </nav>
+        <div class="cart">
+            <span id="cart-count">0</span> Items in Cart
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -34,32 +38,25 @@
     <!-- Categories Section -->
     <section id="categories" class="categories">
         <h2>Our Exclusive Categories</h2>
-        <div class="categories-grid">
-            <!-- Link each category to its respective file -->
-            <div class="category-item">
-                <a href="clothing.html">
-                    <img src="Images/Clothing.jpg" alt="Clothing">
-                    <h3>Clothing</h3>
-                </a>
-            </div>
-            <div class="category-item">
-                <a href="accessories.html">
-                    <img src="Images/accessories.jpg" alt="Accessories">
-                    <h3>Accessories</h3>
-                </a>
-            </div>
-            <div class="category-item">
-                <a href="home-decor.html">
-                    <img src="Images/home-decor.jpg" alt="Home Decor">
-                    <h3>Home Decor</h3>
-                </a>
-            </div>
-            <div class="category-item">
-                <a href="art.html">
-                    <img src="Images/art.jpg" alt="Art">
-                    <h3>Art</h3>
-                </a>
-            </div>
+
+        <!-- Category Filter Dropdown -->
+        <select id="category-filter">
+            <option value="All">All Categories</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Home Decor">Home Decor</option>
+            <option value="Art">Art</option>
+        </select>
+
+        <!-- Product Sorting Dropdown -->
+        <select id="sort-select">
+            <option value="default">Sort by</option>
+            <option value="price-low-to-high">Price: Low to High</option>
+            <option value="price-high-to-low">Price: High to Low</option>
+        </select>
+
+        <div id="product-grid" class="categories-grid">
+            <!-- Products will be dynamically loaded here -->
         </div>
     </section>
 
@@ -87,6 +84,7 @@
         <p>&copy; 2024 SYGT. All rights reserved.</p>
     </footer>
 
-    <script src="Script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
