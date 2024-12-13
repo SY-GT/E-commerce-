@@ -1,15 +1,15 @@
 /* General Styles */
 body {
-    margin:auto;
+    margin: 0;
     font-family: 'Playfair Display', serif;
     color: #333;
     line-height: 1.6;
     background-color: grey;
+    
 }
 
 /* Header */
 header {
-    padding-right:1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +48,7 @@ header nav ul li a:hover {
 /* Hero Section */
 .hero {
     height: 90vh;
-    background: url("Images/Welcome.jpg") no-repeat center center/cover;
+    background: url("images/Welcome.jpg") no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,4 +163,4 @@ footer {
     color: darkgrey;
     padding: 10px 20px;
     text-align: center;
-    }
+}
