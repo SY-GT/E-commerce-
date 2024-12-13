@@ -1,11 +1,11 @@
 /* General Styles */
 body {
-    margin: 0;
+    margin: auto;
     font-family: 'Playfair Display', serif;
     color: #333;
     line-height: 1.6;
     background-color: grey;
-    
+    margin-right:2px;
 }
 
 /* Header */
@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #111;
+    background-color: black;
     color: #fff;
     padding: 15px 20px;
     position: sticky;
@@ -25,6 +25,7 @@ header .logo {
     font-size: 45px;
     font-weight: bold;
     letter-spacing: 2px;
+    color:white;
 }
 
 header nav ul {
