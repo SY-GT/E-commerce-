@@ -1,4 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
+// In your frontend's script.js
+fetch('https://your-backend-service.onrender.com/api/endpoint')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Data from backend:', data);
+    // You can now use the data to update your frontend
+  })
+  .catch(error => console.error('Error:', error));document.addEventListener("DOMContentLoaded", () => {
     // Smooth Scrolling for all links
     const smoothScrollLinks = document.querySelectorAll("a[href^='#']");
     smoothScrollLinks.forEach(link => {
