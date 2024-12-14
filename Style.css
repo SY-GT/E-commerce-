@@ -1,17 +1,19 @@
 /* General Styles */
 body {
-    margin: 0;
+    margin: auto;
     font-family: 'Playfair Display', serif;
     color: #333;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: grey;
+    margin-right:2px;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #111;
+    background-color: black;
     color: #fff;
     padding: 15px 20px;
     position: sticky;
@@ -22,7 +24,8 @@ header {
 header .logo {
     font-size: 45px;
     font-weight: bold;
-    color: #fff;
+    letter-spacing: 2px;
+    color:white;
 }
 
 header nav ul {
@@ -36,12 +39,14 @@ header nav ul li a {
     color: #fff;
     font-size: 16px;
     transition: color 0.3s ease;
+    margin-right: 0px;
 }
 
 header nav ul li a:hover {
     color: #f39c12;
 }
 
+/* Hero Section */
 .hero {
     height: 90vh;
     background: url("images/Welcome.jpg") no-repeat center center/cover;
@@ -76,6 +81,7 @@ header nav ul li a:hover {
     background-color: #e67e22;
 }
 
+/* Categories Section */
 .categories {
     padding: 40px 20px;
     text-align: center;
@@ -92,7 +98,7 @@ header nav ul li a:hover {
     gap: 20px;
 }
 
-.product-item {
+.category-item {
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
@@ -101,22 +107,29 @@ header nav ul li a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.product-item:hover {
+.category-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.product-item img {
+.category-item img {
     width: 100%;
     height: auto;
 }
 
-.product-item h3 {
+.category-item h3 {
     margin: 10px 0;
     padding: 0 10px;
 }
+/* About Section */
+.about {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
 
-.about, .contact {
+/* Contact Section */
+.contact {
     padding: 40px 20px;
     text-align: center;
 }
@@ -129,7 +142,8 @@ header nav ul li a:hover {
     gap: 15px;
 }
 
-.contact form input, .contact form textarea {
+.contact form input,
+.contact form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -140,10 +154,11 @@ header nav ul li a:hover {
     background-color: #111;
     color: #fff;
     padding: 10px;
-    border: none;
+    border:none;
     cursor: pointer;
 }
 
+/* Footer */
 footer {
     background-color: #111;
     color: darkgrey;
