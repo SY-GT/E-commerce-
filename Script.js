@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Fetch products from the backend
-    fetch('https://backend-aopi.onrender.com/products') // Updated URL
+    fetch('/products') // Assuming backend API is set up
         .then(response => response.json())
         .then(products => {
             const productGrid = document.getElementById('product-grid');
@@ -124,4 +124,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Call updateCartCount on page load to show the current cart count
     updateCartCount();
-});
+}); 
