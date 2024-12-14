@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", () => {
     // Smooth Scrolling for all links
     const smoothScrollLinks = document.querySelectorAll("a[href^='#']");
@@ -124,4 +126,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Call updateCartCount on page load to show the current cart count
     updateCartCount();
-}); 
+});
