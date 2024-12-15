@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site Under Maintenance</title>
+    <style>
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Main Message Container */
+        .maintenance-message {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* Title Styling */
+        .maintenance-message h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #f44336;
+        }
+
+        /* Paragraph Styling */
+        .maintenance-message p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* Contact Information Styling */
+        .maintenance-message .contact-info {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .maintenance-message .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .maintenance-message .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button Styling */
+        .maintenance-message .back-button {
+            padding: 15px 30px;
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .maintenance-message .back-button:hover {
+            background-color: #d32f2f;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .maintenance-message {
+                padding: 30px;
+            }
+            .maintenance-message h1 {
+                font-size: 32px;
+            }
+            .maintenance-message p {
+                font-size: 18px;
+            }
+            .maintenance-message .back-button {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="maintenance-message">
+        <h1>We’re Under Maintenance</h1>
+        <p>Our website is currently undergoing scheduled maintenance. We’ll be back shortly!</p>
+        <p>We apologize for any inconvenience. Please check back later.</p>
+
+        <div class="contact-info">
+            <p>If you need immediate assistance, please <a href="mailto:support@example.com">contact support</a>.</p>
+        </div>
+
+        <button class="back-button" onclick="window.location.href='https://www.example.com'">Back to Homepage</button>
+    </div>
+
+</body>
+</html>
